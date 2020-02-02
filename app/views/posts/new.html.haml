@@ -13,8 +13,8 @@
             = f.fields_for :images do |i|
               = i.label 'サムネイル（スクリーンショットなど）'
               #img_field{:onclick => "$('#file').click()"}
-                - if @image.image.present?
-                  = image_tag @image.images.to_s
+                - if @image.present?
+                  = image_tag @image.to_s
                 - else
                   %i.fas.fa-image
                   %i.fas.fa-file-upload.add
