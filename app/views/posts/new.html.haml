@@ -1,6 +1,6 @@
 .main
   %selection.main__block
-    = form_with model:@post, local:true do |f|
+    = form_for @post, local:true do |f|
       %h2.post-block
         投稿内容を入力
       .post-form
